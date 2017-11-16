@@ -1,0 +1,259 @@
+*{
+    box-sizing: border-box;
+    font-family: 'Source Code Pro', monospace;
+    font-family: 'Unica One', cursive;
+    font-family: 'Sintony', sans-serif;
+    font-family: 'Slabo 13px', serif;
+    font-family: 'Limelight', cursive;
+    font-family: 'Rozha One', serif;
+    font-family: 'Barlow Condensed', sans-serif;
+    font-family: 'Saira Semi Condensed', sans-serif;
+    font-family: 'Open Sans Condensed', sans-serif;
+    font-family: 'Libre Baskerville', serif;
+    font-family: 'Abel', sans-serif;
+ }
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.section-container {
+    padding-top: 0;
+    padding-bottom: 605px;
+    background-color: white; 
+}
+
+.section-container-works{
+    padding-top: 0;
+    padding-bottom: 130px;
+    background-color: white;   
+}
+
+.section-container-contact {
+    padding-top: 0;
+    padding-bottom: 45px;
+    background-color: #ccc; 
+
+}
+
+/*NAVBAR*/
+.navbar{
+    width: 100%;
+    z-index: 100;
+    position: fixed;
+    top: 0;
+    background: white; 
+}
+
+.navbar > .navbar-list {
+    display: flex;
+    justify-content: flex-end; 
+    list-style-type: none;
+    margin: 0;
+}
+
+.navbar > .navbar-list > .navbar-item {
+    display: inline;
+    font-size: 20px;
+}
+
+
+.navbar > .navbar-list > .navbar-item a{
+    padding: 20px;
+    text-decoration: none;
+    display: inline-block;
+    transition: all 0.2s linear;
+    color: var(--uno-text-color);
+    font-weight: lighter;   
+}
+
+
+.navbar > .navbar-list > .navbar-item.active a{
+    color: var(--tre-background-color);  
+}
+
+
+
+
+
+
+
+/*HEADER*/
+.header-img {
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-image: url(../img/copertina.jpg);
+    height: 100vh;
+}
+
+.title{
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    top: 25%;
+    font-size: 5em;
+    width: 100%;
+    position: absolute;
+    color: black;
+    padding-left: 10%;
+    font-weight: 500;   
+}
+
+.header > .title-cit{
+    display: flex;
+    justify-content: flex-start;
+    top: 40%;
+    font-size: 1.566em;
+    width: 100%;
+    position: absolute;
+    padding-left: 10%;
+    color: black;
+    font-weight: lighter;
+}
+
+
+
+
+
+
+/*ABOUT*/
+.about{
+    display: flex;
+    padding-top: 10%;
+}
+
+.title-about{
+    display: flex;
+    justify-content: flex-start;
+    font-size: 2.3em;
+    width: 100%;
+    color: black;
+    position: absolute;
+    font-weight: 600;
+    margin: 0;
+    margin-top: 10px;
+    padding: 0;
+    padding-left: 5%;
+}
+
+.paragrafo-about{
+    top: 130%;
+    font-size: 1.3em;
+    width: 50%;
+    position: absolute;
+    color: black;
+    font-weight: 800; 
+    padding-left: 5%;
+    margin: 0;
+    float: left;
+}
+
+.about-foto{
+    float: right;
+    padding-right: 4%;
+    max-width: 100%; 
+}
+
+
+
+
+/*WORKS*/
+.works{
+    display: flex;
+    padding-top: 10%;
+}
+
+.title-works{
+    display: flex;
+    justify-content: flex-start;
+    font-size: 2.3em;
+    width: 100%;
+    color: black;
+    position: absolute;
+    font-weight: 600;
+    margin: 0;
+    margin-top: 10px;
+    padding: 0;
+    padding-left: 5%;
+}
+
+.wrap{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding-top: 140px;
+}
+
+
+.works-img{
+    padding-top: 100px;
+    max-width: 100%;
+}
+
+.video{
+    width: 85%;
+    height: 50%;
+    float: center;
+    display: flex;
+    justify-content: center; 
+    margin-left:7.5%;
+    padding: 0;
+
+}
+
+.title-skills {
+    display: flex;
+    justify-content: flex-start;
+    font-size: 2.3em;
+    width: 100%;
+    color: black;
+    position: absolute;
+    font-weight: 600;
+    margin: 0;
+    padding: 0;
+    padding-left: 5%; 
+    padding-top: 120px; 
+}
+
+
+/*FOOTER*/
+.footerhome{
+    display: flex;
+    justify-content: center;
+    padding: 40px;
+    background-color: #ccc;
+}
+
+
+
+/* CONTACT*/
+
+.form{
+padding-top: 500px;
+display: flex;
+justify-content: center;
+
+}
+
+
+.maps{
+    width: 100%;
+    height: 500px;
+    z-index: 5;
+    position: absolute;
+
+}
+
+
+
+/*FOOTERconctact*/
+.footercontact{
+    display: flex;
+    justify-content: center;
+    padding: 40px;
+    background-color: #fff;
+}
+
+

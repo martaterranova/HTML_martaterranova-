@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Marta Terranova</title>
+    <link rel="stylesheet" type="text/css" href="./style/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Abel|Barlow+Condensed|Libre+Baskerville|Limelight|Open+Sans+Condensed:300|Rozha+One|Saira+Semi+Condensed|Sintony|Slabo+13px|Source+Code+Pro|Unica+One" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="./style/skills.css" >
+    <link rel="stylesheet" href="./style/contact.css">
+    
+    <script src="http://maps.googleapis.com/maps/api/js?key=AIzaSyA-jpiiZm0kg4wbYwPvUtNZvyLbiNcz6p8"></script>
+    <script>
+        function initialize() {
+            var myLatLng = {lat: 36.7834487, lng: 14.552026599999976};
+    
+            var mapProp = {
+                center:myLatLng,
+                zoom:15,
+                mapTypeId:google.maps.MapTypeId.ROADMAP
+            };
+            var map=new google.maps.Map(document.getElementById("googleMap"),mapProp);
+    
+            var marker = new google.maps.Marker({
+                position: myLatLng,
+                map: map,
+                title: 'Aqui estamos'
+            });
+        }
+        google.maps.event.addDomListener(window, 'load', initialize);
+    </script>
+</head>
+
+
+<body>
+    <nav class="navbar">
+        <ul class="navbar-list">
+            <li class="navbar-item active"> 
+                <a href="index.html"> HOME </a>
+            </li>
+            <li class="navbar-item"> 
+                <a href="index.html#about"> ABOUT </a>
+            </li>
+            <li class="navbar-item"> 
+                <a href="index.html#works"> WORKS </a> 
+            </li>
+            <li class="navbar-item">
+                <a href="index.html#skills"> SKILLS </a> 
+            </li>
+            <li class="navbar-item"> 
+                <a href="contact.html"> CONTACT </a> 
+            </li>
+        </ul>
+    </nav>
+
+    <section class="section-container-contact">
+        <section class="mappa">
+            <div id="googleMap" class="maps"></div>
+        </section>
+        <section id="contact">
+            <h1 class="contattami"> Contact me </h1>
+            <form name="contact" method="get" class="form">
+                <span class="form-row">
+                        <!--nome-->
+                    <div class="contatti-item">
+                        <label for="nombre"></label>
+                        <input type="text" id="name" name="name" placeholder="Name" required>
+                    </div>
+                                        
+                        <!--Email-->
+                    <div class="contatti-item">
+                        <label for="email"></label>
+                        <input type="email" id="email" name="email" placeholder="email" pattern="[A-Za-z0-9\.\+]+@[A-Za-z0-9]+\.[A-Za-z0-9\.]+" required>
+                     </div>
+                                        
+                        <!--telefono-->
+                    <div class="contatti-item">
+                        <label for="number"></label>
+                        <input type="tel" name="number" placeholder="number" pattern="[0-9]{9}" required>
+                    </div>
+                        
+                        <!--come mi hai conosciuto?-->
+                    <div class="contatti-item">
+                        <select name="opzioni">
+                            <optgroup label="come mi hai conosciuta">
+                                <option> Friends </option>
+                                <option> Internet</option>
+                                <option>Facebook</option>
+                                <option> Instagram</option>
+                            </optgroup>
+                        </select>
+                    </div>
+                        
+                </span> 
+                        
+                        
+                    <!--messaggio-->
+                <span class="form-row messaggio">
+                    <textarea name="message" id="message" cols="30" rows="10" placeholder="your message"></textarea>
+                    <form method="get">
+                         <input type="submit" value="send" /> 
+                    </form>
+                </span>
+            </form>
+        </section>
+
+       
+    </section>
+    
+    <footer class="footercontact"> &copy; Marta Terranova - 2017  </footer>
+</body>
+</html>
