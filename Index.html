@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Marta Terranova</title>
+    <link rel="stylesheet" type="text/css" href="./style/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Abel|Barlow+Condensed|Libre+Baskerville|Limelight|Open+Sans+Condensed:300|Rozha+One|Saira+Semi+Condensed|Sintony|Slabo+13px|Source+Code+Pro|Unica+One" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="./style/skills.css" >
+    <link rel="stylesheet" href="./style/contact.css">
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+   
+        <!--SKILLS-->
+	<script>
+		jQuery(document).ready(function() {
+		jQuery(".skillbar").each(function() {
+		jQuery(this).find(".skillbar-bar").animate(
+		{width: jQuery(this).attr("data-percent")},
+			8000);});});
+    </script>
+    
+    <script>
+        var map = new google.maps.Map(document.getElementById("mapa"), mapOptions);
+    </script>
+    
+    <script>
+    var styles = [
+    {
+      stylers: [
+        { hue: "#41a7d5" },
+        { saturation: 60 },
+        { lightness: -20 },
+        { gamma: 1.51 }
+      ]
+    },
+    {
+      featureType: "road",
+      elementType: "geometry",
+      stylers: [
+        { lightness: 100 },
+        { visibility: "simplified" }
+      ]
+    },
+    {
+      featureType: "road",
+      elementType: "labels"
+    }
+  ];
+    </script>
+</head>
+
+<body>
+<!--header-->
+    <header class="header">
+        <h1 class="title"> Marta Terranova </h1>
+        <p class="title-cit"> Industrial & Graphic Designer</p>
+        <div class="header-img"> </div>
+    </header>
+
+<!--navbar-->
+    <nav class="navbar">
+        <ul class="navbar-list">
+            <li class="navbar-item active"> 
+                <a href="index.html"> HOME </a>
+            </li>
+            <li class="navbar-item"> 
+                <a href="index.html#about"> ABOUT </a>
+            </li>
+            <li class="navbar-item"> 
+                <a href="index.html#works"> WORKS </a> 
+            </li>
+            <li class="navbar-item">
+                <a href="index.html#skills"> SKILLS </a> 
+                </li>
+            <li class="navbar-item"> 
+                <a href="contact.html"> CONTACT </a> 
+            </li>
+        </ul>
+    </nav>
+
+
+    <main class="container">
+
+    <!--about-->
+        <section id="about" class="section-container">
+            <div class="about">
+                <h1 class="title-about">About</h1>
+                <span class="paragrafo-about">
+                        Studentessa di disegno industriale presso l'Università di Roma La Sapienza.
+                        Attualmente vincitrice della borsa di studio all'estero di 6 mesi 
+                        per l'Universidad Politecnica de Valencia in Ingegneria del disegno (ETSID).  
+                        Sono un’amante di Serie TV, cinema e musica d’autore.
+                        Mi considero una persona creativa, 
+                        cerco di guardare le cose con svariate prospettive,
+                        fino a cogliere la chiave per la soluzione dei problemi. 
+                        Sebbene la mia facoltà abbracci tutte le branche del Design,
+                        prediligo il graphic design e tutto quello che riguarda 
+                        la comunicazione in genere.
+                </span>
+            </div>  
+            <img src="./img/about.jpg" alt="About" class="about-foto">
+        </section>
+    
+    <!--Works-->
+        <section id="works" class="section-container-works">
+            <div class="wrap">
+                <h1 class="title-works">Works</h1>
+                <div class="works-img">
+                    <img src="./gallery/birra.jpg" alt="works-birra">
+                    <img src="./gallery/rachel.jpg" alt="works-rachel">
+                    <img src="./gallery/trapano.jpg" alt="works-trapano">
+                </div>    
+            </div>
+            <video id="video"  controls class="video">
+                <source src="./vid/video.mp4" type="video/mp4" >
+            </video>
+        </section>
+        
+
+
+
+    
+        <!--Skills-->
+    
+        <section id="skills" class="section-container">
+            <h1 class="title-skills">Skills</h1>
+            <div class="skills">
+                <div class="skillbar " data-percent="80%">
+                    <div class="skillbar-title" style="background: #cccccc;"><span> Adobe Photoshop</span></div>
+                    <div class="skillbar-bar" style="background: #cccccc;"></div>
+                    <div class="skill-bar-percent">80%</div>
+                </div>
+                <div class="skillbar " data-percent="80%">
+                    <div class="skillbar-title" style="background:  #cccccc;"><span> Adobe Illustrator</span></div>
+                    <div class="skillbar-bar" style="background: #cccccc;"></div>
+                    <div class="skill-bar-percent">80%</div>
+                </div> 
+
+                <div class="skillbar" data-percent="60%">
+                    <div class="skillbar-title" style="background:  #cccccc;"><span>Adobe InDesign</span></div>
+                    <div class="skillbar-bar" style="background:  #cccccc;"></div>
+                    <div class="skill-bar-percent">60%</div>
+                </div> 
+
+                <div class="skillbar " data-percent="70%">
+                    <div class="skillbar-title" style="background:  #cccccc;"><span>Adobe Premiere Pro CC </span></div>
+                    <div class="skillbar-bar" style="background:  #cccccc;"></div>
+                    <div class="skill-bar-percent">70%</div>
+                </div> 
+
+                <div class="skillbar" data-percent="60%">
+                    <div class="skillbar-title" style="background:  #cccccc;"><span>Adobe AfterEffects</span></div>
+                    <div class="skillbar-bar" style="background:#cccccc;"></div>
+                    <div class="skill-bar-percent">40%</div>
+                </div> 
+
+                <div class="skillbar" data-percent="70%">
+                    <div class="skillbar-title" style="background:  #cccccc;"><span> Rhinoceros</span></div>
+                    <div class="skillbar-bar" style="background:  #cccccc;"></div>
+                    <div class="skill-bar-percent">70%</div>
+                </div> 
+
+                <div class="skillbar" data-percent="80%">
+                    <div class="skillbar-title" style="background:  #cccccc;"><span> Arena </span></div>
+                    <div class="skillbar-bar" style="background:  #cccccc;"></div>
+                    <div class="skill-bar-percent">80%</div>
+                </div>
+
+
+                <div class="skillbar" data-percent="80%">
+                    <div class="skillbar-title" style="background:  #cccccc;"><span> Autodesk Fusion 360 </span></div>
+                    <div class="skillbar-bar" style="background:  #cccccc;"></div>
+                    <div class="skill-bar-percent">80%</div>
+                </div>
+
+                <div class="skillbar" data-percent="80%">
+                    <div class="skillbar-title" style="background:  #cccccc;"><span> Autocad 2015 </span></div>
+                    <div class="skillbar-bar" style="background:  #cccccc;"></div>
+                    <div class="skill-bar-percent">80% </div>
+                </div>
+
+            </div>
+
+        </section>
+
+    </main><!--end main-->
+    
+    <!--footer-->
+    <footer class="footerhome"> &copy; Marta Terranova - 2017  </footer>
+
+    
+
+</body>
+
+</html>
